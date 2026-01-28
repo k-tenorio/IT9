@@ -1,6 +1,7 @@
 {
     "rewrites": [
-        { "source": "/(.*)", "destination": "/task6_portfolio.html"}
+        { "source": "/(.*)", "destination": "task6_portfolio.html"}
     ]
 
 }
+
