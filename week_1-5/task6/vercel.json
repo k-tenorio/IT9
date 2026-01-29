@@ -1,7 +1,0 @@
-{
-    "rewrites": [
-        { "source": "/(.*)", "destination": "task6_portfolio.html"}
-    ]
-
-}
-
