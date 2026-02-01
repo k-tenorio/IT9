@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman';
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 350px;
+    margin: 100px auto;
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px black;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.form {
+    text-align: left;
+}
+
+.label {
+display: block;
+margin-top: 10px;
+}
+
+.container form .btn {
+    display: block;
+    margin-top: 10px;
+    margin: 10px auto;
+}
+
+.btn-login {
+    display: block;           
+    width: fit-content;       
+    margin: 10px auto 0;     
+    padding: 2px 10px;       
+    font-size: 15px;         
+    text-align: center;       
+    text-decoration: none;    
+    color: black;          
+    background-color: #f0f0f0; 
+    border: 1px solid #000000;   
+    border-radius: 3px; 
+}
+
+body {
+    background-color: rgba(102, 174, 202, 0.71);
+}
+
+
+
+
