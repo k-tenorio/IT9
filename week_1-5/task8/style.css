@@ -1,0 +1,65 @@
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    }
+
+    /* Style for the calculator container */
+    #calculator {
+    background-color: #e6e1e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style for the display area */
+    #display {
+    width: 175px;
+    height: 40px;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    padding: 5px;
+    }
+
+    /* Grid layout for the calculator buttons */
+    #keys {
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    gap: 10px;
+    }
+
+    /* Style for the buttons */
+    #keys button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    /* Hover effect for the buttons */
+    buttons button:hover {
+    background-color: #45a049;
+    }
+
+    /* Special style for the equals button */
+    #keys .equals {
+    background-color: #2196F3;
+    }
+
+    /* Hover effect for the equals button */
+    .buttons .equals:hover {
+    background-color: #0b7dda;
+    }
+
+    #dark-mode-toggle {
+        margin-right: 150px;
+    }
+    
