@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <title>Level 4 - Web Dev Mini-Quest</title>
+
+    <style>
+        body {
+            background-color: #64d6de;
+        }
+
+        .card {
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .btn {
+            transition-duration: 0.4s;
+        }
+
+        .btn:hover {
+            background-color: #31868c;
+            color: white;
+
+        }
+
+        #card-title {
+            border-radius: 7px;
+            font-size: 10pt;
+            color: white;
+            display: inline;
+            padding: 3px;
+            background-color: rgb(60, 134, 134);
+        }
+
+    </style>
+
+    <script>
+        function submitForm() {
+            let name = document.getElementById("name").value.trim();
+            let display = document.getElementById("display");
+
+            if (name === "") {
+                display.innerText = "Name is required! ❌"
+                display.className = "mt-1 text-danger"
+            } else {
+                display.innerText = "Welcome, " + name + "! ✔️"
+                display.className = "mt-1 text-success"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="card" style="width: 30rem;">
+        <div class="card-body">
+            <h5 id="card-title">Level 4</h5>
+            <h4 class="mt-2"><b>Form Validation</b></h4>
+            <p>Enter a name. Empty = error, filled = success.</p>
+            <form>
+                <label class="mb-1" for="name">Name:</label><br>
+                <input class="w-100" type="text" id="name" name="name" placeholder="Type your name..."><br>
+                <button onclick="submitForm()" type="button" class="btn btn-primary mt-2 w-100">Submit Name</button>
+                <p class="mt-1" id="display"></p>
+            </form>
+
+            <br>
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <a href="level3.html" class="btn btn-primary w-100">← BACK</a>
+                    </div>
+                    <div class="col">
+                        <a href="level5.html" class="btn btn-primary w-100">NEXT →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
