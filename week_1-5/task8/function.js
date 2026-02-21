@@ -9,7 +9,7 @@ function a(input) {
     
     }
 
-    function clearDisplay(op) {
+    function clearDisplay() {
         display.value = ""
     }
 
